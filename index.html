@@ -1,23 +1,1011 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutomotiveBusiness",
+      "name": "디올뉴 스포티지 리스 전문 비교 센터",
+      "url": "https://yourdomain.com",
+      "description": "2026년형 기아 디올뉴 스포티지 모델의 리스 및 장기렌트 상품을 최저가로 비교 분석하고 투명한 견적을 제공하는 전문 플랫폼입니다. 1.6 가솔린 터보, 하이브리드, LPi 등 다양한 파워트레인 맞춤 상담을 지원합니다.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "서울특별시 강남구 테헤란로",
+        "addressLocality": "대한민국",
+        "postalCode": "06123",
+        "addressCountry": "KR"
+      },
+      "priceRange": "KRW",
+      "areaServed": "대한민국 전역",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "기아 디올뉴 스포티지 모델별 리스 견적 상품",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "디올뉴 스포티지 1.6 가솔린 터보 프레스티지 리스",
+              "description": "기아 디올뉴 스포티지 1.6 가솔린 터보 프레스티지 트림의 예상 월 납입금 조건입니다."
+            },
+            "price": "350000",
+            "priceCurrency": "KRW"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "디올뉴 스포티지 1.6 터보 하이브리드 시그니처 리스",
+              "description": "기아 디올뉴 스포티지 1.6 터보 하이브리드 시그니처 트림의 예상 월 납입금 조건입니다."
+            },
+            "price": "450000",
+            "priceCurrency": "KRW"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "디올뉴 스포티지 2.0 LPi 노블레스 리스",
+              "description": "기아 디올뉴 스포티지 2.0 LPi 노블레스 트림의 예상 월 납입금 조건입니다."
+            },
+            "price": "390000",
+            "priceCurrency": "KRW"
+          }
+        ]
+      }
+    }
+  </script>
+
+  <style>
+    html, body, header, main, footer, section, div, p, h1, h2, h3, h4, table, tr, th, td, label, input, select, textarea, ul, li, dl, dt, dd, a, span {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Noto Sans KR", sans-serif;
+      line-height: 1.85;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+      word-break: keep-all;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      letter-spacing: -0.5px;
+    }
+    header p {
+      font-size: 1.15rem;
+      opacity: 0.9;
+      margin-bottom: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      padding: 0;
+    }
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      transition: all 0.25s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    main {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 2.5rem;
+      background-color: #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      border-radius: 16px;
+    }
+    section {
+      margin-bottom: 3.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #eef2f5;
+    }
+    section:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #1e3c72;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      border-left: 6px solid #2a5298;
+      padding-left: 1rem;
+      letter-spacing: -0.5px;
+    }
+    h3 {
+      font-size: 1.35rem;
+      color: #2c3e50;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.05rem;
+      color: #4a5568;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+    .keyword-container {
+      background-color: #f8fafc;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin: 2rem 0;
+      border: 1px solid #e2e8f0;
+    }
+    .keyword-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .keyword-tags span {
+      background-color: #edf2f7;
+      color: #4a5568;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .chart-container {
+      background-color: #fdfdfd;
+      border: 1px solid #e9edf2;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    .custom-bar-chart {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .chart-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .chart-label {
+      width: 180px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    .chart-bar-bg {
+      flex: 1;
+      background-color: #edf2f7;
+      border-radius: 6px;
+      height: 24px;
+      overflow: hidden;
+      position: relative;
+    }
+    .chart-bar-fill {
+      background: linear-gradient(90deg, #4299e1 0%, #3182ce 100%);
+      height: 100%;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 700;
+      transition: width 1s ease-in-out;
+    }
+    .chart-bar-fill.hybrid {
+      background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
+    }
+    .chart-bar-fill.diesel {
+      background: linear-gradient(90deg, #ed8936 0%, #dd6b20 100%);
+    }
+    .chart-bar-fill.lpi {
+      background: linear-gradient(90deg, #9f7aea 0%, #805ad5 100%);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      font-size: 0.95rem;
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    }
+    th, td {
+      padding: 0.95rem 1.2rem;
+      border: 1px solid #e2e8f0;
+      text-align: left;
+    }
+    th {
+      background-color: #1e3c72;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+    .simulator-container {
+      background-color: #f7fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 2.2rem;
+      margin: 2.5rem 0;
+    }
+    .simulator-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .simulator-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .simulator-group label {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+    .simulator-group select, .simulator-group input {
+      padding: 0.75rem;
+      border: 1px solid #cbd5e0;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      background-color: #ffffff;
+    }
+    .simulator-result {
+      background-color: #edf2f7;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #2d3748;
+    }
+    .simulator-result span {
+      color: #1e3c72;
+      font-size: 1.6rem;
+      font-weight: 800;
+      display: block;
+      margin-top: 0.5rem;
+    }
+    dl dt {
+      font-weight: 700;
+      margin-top: 1.2rem;
+      cursor: pointer;
+      color: #2b6cb0;
+      background-color: #f7fafc;
+      padding: 1rem 1.2rem;
+      border-left: 4px solid #2b6cb0;
+      border-radius: 0 6px 6px 0;
+      transition: all 0.2s ease;
+    }
+    dl dt:hover {
+      background-color: #edf2f7;
+    }
+    dl dd {
+      margin: 0.5rem 0 1.5rem 0;
+      padding: 1rem 1.5rem;
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      border-radius: 0 0 6px 6px;
+      color: #4a5568;
+      display: none;
+    }
+    dl dt.active + dd {
+      display: block;
+    }
+    .form-box {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin: 3rem 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+    .form-group label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      padding: 0.75rem;
+      border: 1px solid #cbd5e0;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    .form-group textarea {
+      resize: vertical;
+    }
+    .checkbox-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .checkbox-group input {
+      margin-top: 0.25rem;
+    }
+    .checkbox-group label {
+      font-size: 0.85rem;
+      color: #4a5568;
+    }
+    .submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      border: none;
+      padding: 1rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+      margin-top: 1.5rem;
+    }
+    .submit-btn:hover {
+      opacity: 0.95;
+    }
+    .trusted-links {
+      background-color: #f7fafc;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    .trusted-links ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .trusted-links li {
+      margin-bottom: 0.8rem;
+    }
+    .trusted-links a {
+      color: #2b6cb0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .trusted-links a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background-color: #2d3748;
+      color: #a0aec0;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+      border-top: 1px solid #1a202c;
+    }
+    footer p {
+      color: #a0aec0;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      main {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+      }
+      .chart-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+      }
+      .chart-label {
+        width: 100%;
+      }
+      .chart-bar-bg {
+        width: 100%;
+      }
+      .form-box {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>디올뉴 스포티지 리스 가격 비교 및 2026년식 최저가 견적 가이드</h1>
+    <p>가장 합리적인 비용으로 기아 디올뉴 스포티지 신차를 운용하는 체계적인 가이드</p>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <ul>
+        <li><a href="#intro">스포티지 소개</a></li>
+        <li><a href="#models">모델 및 가격</a></li>
+        <li><a href="#simulator">실시간 계산기</a></li>
+        <li><a href="#comparison">구매 모델 비교</a></li>
+        <li><a href="#apply">무료 상담 신청</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+  </header>
+
+  <main>
+    
+    <section id="intro">
+      <h2>디올뉴 스포티지 리스, 왜 2026년에 대세가 되었을까?</h2>
+      <p>기아의 대표적인 준중형 SUV인 디올뉴 스포티지는 세련된 외관 디자인과 압도적인 실내 공간으로 패밀리카와 출퇴근용 차량을 아우르는 압도적인 인기를 자랑하고 있습니다. 특히 2026년형 디올뉴 스포티지는 더욱 진보된 최첨단 안전 장비와 새로운 스마트 인포테인먼트 시스템을 탑재하여 상품성이 대폭 강화되었습니다. 이처럼 뛰어난 가치를 지닌 차량을 직접 구매할 때 발생하는 초기 세금이나 높은 인수 비용 부담을 획기적으로 낮추기 위해 수많은 소비자들이 일시불이나 할부 대신 금융 상품을 선택하고 있습니다.</p>
+      
+      <p>스포티지 리스를 이용하면 차량이 개인 자산으로 등록되지 않기 때문에 국민건강보험료나 재산세 등의 공공 요금이 인상되는 것을 미연에 방지할 수 있습니다. 개인 및 법인 사업자의 경우 매월 지출되는 리스료를 전액 비용 처리하여 종합소득세나 법인세를 효과적으로 줄일 수 있는 장점이 있습니다. 현재 판매되고 있는 디올뉴 스포티지 1.6 가솔린 터보, 하이브리드, 2.0 LPi, 2.0 디젤 등 다양한 엔진 라인업별로 본인에게 가장 적합한 금융 상환 설계를 적용해 최저 금액을 도출하는 것이 핵심입니다.</p>
+
+      <p>리스 시장의 평균 시세는 대리점마다 제공하는 할인율과 프로모션 정책에 따라 큰 차이를 보입니다. 그렇기 때문에 인터넷 온라인 환경에서 실시간으로 대규모 제휴 업체의 견적을 한눈에 대조해 보고, 무리하지 않는 선에서 최선의 계약 조건을 설정하는 것이 매우 권장됩니다. 본 가이드는 소비자들이 불필요한 중간 수수료 없이 제일 투명하고 직관적인 방식으로 비교할 수 있도록 실용적이고 체계적인 정보를 종합하여 제공합니다.</p>
+    </section>
+
+    <div class="keyword-container">
+      <h3>스포티지 리스 관련 최적화 검색어 가이드</h3>
+      <p>본 사이트는 포털 사이트의 함께 많이 찾는 카테고리 분석과 실시간 자동완성 및 연관검색어를 종합하여 이용자들에게 신뢰도 높은 데이터를 제공하고 있습니다. 아래 태그들은 실시간 시장 동향을 반영한 핵심 키워드 목록입니다.</p>
+      <div class="keyword-tags">
+        <span>디올뉴 스포티지 리스 가격</span>
+        <span>스포티지 하이브리드 리스 비용</span>
+        <span>디올뉴 스포티지 최저가 견적</span>
+        <span>2026 스포티지 모의 계산기</span>
+        <span>개인사업자 스포티지 리스 추천</span>
+        <span>법인차량 비용처리 혜택</span>
+        <span>스포티지 가솔린 터보 리스 요금</span>
+        <span>스포티지 LPi 리스 저렴한곳</span>
+        <span>신차 즉시출고 성지 좌표</span>
+        <span>스포티지 장기렌트 리스 차이점</span>
+        <span>스포티지 장단점 내돈내산 후기</span>
+        <span>다이렉트 무보증 승인방법</span>
+        <span>보배드림 스포티지 출고 후기</span>
+        <span>디시인사이드 자동차 갤러리 팁</span>
+        <span>에펨코리아 추천 차량 금융 상품</span>
+      </div>
+    </div>
+
+    <section id="models">
+      <h2>디올뉴 스포티지 2026년도 라인업 및 상세 가격표</h2>
+      <p>디올뉴 스포티지는 소비자의 라이프스타일에 맞게 폭넓은 엔진 종류를 갖추고 있습니다. 고효율의 연비를 자랑하는 하이브리드부터 경제성이 탁월한 LPi, 그리고 정통 SUV의 강력한 토크를 제공하는 디젤과 대중적인 가솔린 터보까지 다채롭게 구성되어 있습니다. 각 트림별 기본 차량가와 48개월 기준(선납금 30퍼센트 설정 시)의 평균 예상 월 요금을 상세하게 대조해 드립니다.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>파워트레인 및 트림 분류 (30종 모델 리스트)</th>
+            <th>기본 차량 가격 (원)</th>
+            <th>예상 월 리스 요금 (원)</th>
+            <th>주요 옵션 및 특징 요약</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>디올뉴 스포티지 1.6 가솔린 터보 프레스티지 2WD</td>
+            <td>28,400,000</td>
+            <td>330,000</td>
+            <td>8단 자동변속기, 다중 충돌방지 자동 제동 시스템</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 가솔린 터보 노블레스 2WD</td>
+            <td>31,900,000</td>
+            <td>370,000</td>
+            <td>12.3인치 내비게이션, 스마트 파워테일게이트</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 가솔린 터보 시그니처 2WD</td>
+            <td>34,600,000</td>
+            <td>410,000</td>
+            <td>파노라믹 커브드 디스플레이, 원격 스마트 주차 보조</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 가솔린 터보 그래비티 2WD</td>
+            <td>35,800,000</td>
+            <td>430,000</td>
+            <td>그래비티 전용 외장 디자인, 19인치 다크 메탈 휠</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 가솔린 터보 프레스티지 4WD</td>
+            <td>30,400,000</td>
+            <td>360,000</td>
+            <td>전자식 사륜구동, 험로주행 모드 지원</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 가솔린 터보 노블레스 4WD</td>
+            <td>33,900,000</td>
+            <td>400,000</td>
+            <td>4WD 시스템, 서라운드 뷰 모니터 탑재 가능</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 가솔린 터보 시그니처 4WD</td>
+            <td>36,600,000</td>
+            <td>440,000</td>
+            <td>가솔린 터보 최상위 트림의 완성도 높은 안전 사양</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 가솔린 터보 그래비티 4WD</td>
+            <td>37,800,000</td>
+            <td>460,000</td>
+            <td>독보적인 그래비티 드레스업 디자인과 사륜구동 조화</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 LPi 프레스티지 2WD</td>
+            <td>29,100,000</td>
+            <td>340,000</td>
+            <td>우수한 정숙성, 원형 LPi 봄베 탑재로 넓은 트렁크</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 LPi 노블레스 2WD</td>
+            <td>32,600,000</td>
+            <td>380,000</td>
+            <td>하이패스 자동결제 시스템, 동승석 파워시트</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 LPi 시그니처 2WD</td>
+            <td>35,300,000</td>
+            <td>420,000</td>
+            <td>앰비언트 라이트, 고급 가죽 시트 기본 적용</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 LPi 그래비티 2WD</td>
+            <td>36,500,000</td>
+            <td>440,000</td>
+            <td>LPi 최상위 트림의 고유 품격과 다크 메탈릭 몰딩</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 터보 하이브리드 프레스티지 2WD</td>
+            <td>33,500,000</td>
+            <td>390,000</td>
+            <td>복합 연비 16.7km/l 돌파, 세제 혜택 반영가</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 터보 하이브리드 노블레스 2WD</td>
+            <td>36,800,000</td>
+            <td>430,000</td>
+            <td>전방 충돌방지 보조, 후측방 충돌 경고</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 터보 하이브리드 시그니처 2WD</td>
+            <td>39,500,000</td>
+            <td>470,000</td>
+            <td>헤드업 디스플레이, 빌트인 캠 2 적용 가능</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 터보 하이브리드 그래비티 2WD</td>
+            <td>40,700,000</td>
+            <td>490,000</td>
+            <td>하이브리드 친환경 가치와 고급스러운 디자인의 집약</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 터보 하이브리드 프레스티지 4WD</td>
+            <td>35,700,000</td>
+            <td>420,000</td>
+            <td>E-Handling 시스템 탑재로 안락한 승차감 강화</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 터보 하이브리드 노블레스 4WD</td>
+            <td>39,000,000</td>
+            <td>460,000</td>
+            <td>사륜구동 주행 안정성과 스마트 크루즈 컨트롤 시너지</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 터보 하이브리드 시그니처 4WD</td>
+            <td>41,700,000</td>
+            <td>500,000</td>
+            <td>운전석 메모리 시트, 스마트폰 무선 충전 시스템</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 터보 하이브리드 그래비티 4WD</td>
+            <td>42,900,000</td>
+            <td>520,000</td>
+            <td>2026년 기준 가장 높은 인기를 자랑하는 풀옵션 사양</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 디젤 프레스티지 2WD</td>
+            <td>30,900,000</td>
+            <td>360,000</td>
+            <td>장거리 고속 주행에 가장 최적화된 높은 토크 성능</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 디젤 노블레스 2WD</td>
+            <td>34,400,000</td>
+            <td>400,000</td>
+            <td>차로 유지 보조, 후방 모니터 기본 구성</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 디젤 시그니처 2WD</td>
+            <td>37,100,000</td>
+            <td>440,000</td>
+            <td>서라운드 뷰 모니터링, 후방 교차 충돌 방지 보조</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 디젤 그래비티 2WD</td>
+            <td>38,300,000</td>
+            <td>460,000</td>
+            <td>블랙 인테리어 하이그로시 마감의 전용 그래비티 사양</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 디젤 프레스티지 4WD</td>
+            <td>32,900,000</td>
+            <td>390,000</td>
+            <td>정밀한 트랙션 컨트롤과 우수한 등판 능력을 보유</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 디젤 노블레스 4WD</td>
+            <td>36,400,000</td>
+            <td>430,000</td>
+            <td>가혹 조건 주행에서도 안전을 완벽히 지지하는 4WD</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 디젤 시그니처 4WD</td>
+            <td>39,100,000</td>
+            <td>470,000</td>
+            <td>풀 LED 헤드램프 및 순차점등 턴시그널 포함</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 2.0 디젤 그래비티 4WD</td>
+            <td>40,300,000</td>
+            <td>490,000</td>
+            <td>오프로드 감성을 선호하는 마니아층 추천 패키지</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 가솔린 터보 30주년 에디션</td>
+            <td>34,900,000</td>
+            <td>420,000</td>
+            <td>헤드레스트 퀼팅 자수와 고유 내장재가 돋보이는 모델</td>
+          </tr>
+          <tr>
+            <td>디올뉴 스포티지 1.6 터보 하이브리드 30주년 에디션</td>
+            <td>39,800,000</td>
+            <td>480,000</td>
+            <td>한정판 고유 프리미엄과 세제 혜택이 어우러진 모델</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>위 표에 명시된 금액은 전형적인 이율 5.5퍼센트를 대입해 가정한 수치이며, 금융사의 내부 신용 심사 평가 및 실시간 적용되는 기아 자동차의 공식 할인 조건에 따라 약간의 차이가 발생할 수 있습니다. 정확한 차량 출고가를 파악하고 월 납입 비용을 상세히 계산하려면 전문 다이렉트 에이전시의 안내를 받는 것을 적극 권장합니다.</p>
+    </section>
+
+    <section class="chart-container">
+      <h2>파워트레인별 기본 리스 요금 비중 비교 분석</h2>
+      <p>각 엔진 형식에 따른 월 리스료 부담 정도를 한눈에 알아보기 쉽게 도식화하였습니다. 초기 구매 비용과 연비 효율의 연간 누적 데이터를 기준으로 구성한 지표입니다.</p>
+      <div class="custom-bar-chart">
+        <div class="chart-row">
+          <span class="chart-label">1.6 가솔린 터보 (낮은 초기 비용)</span>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" style="width: 55%;">월 33만원선 ~</div>
+          </div>
+        </div>
+        <div class="chart-row">
+          <span class="chart-label">2.0 LPi (우수한 정숙성 및 경제성)</span>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill lpi" style="width: 62%;">월 34만원선 ~</div>
+          </div>
+        </div>
+        <div class="chart-row">
+          <span class="chart-label">2.0 디젤 (고속 주행 연비 이점)</span>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill diesel" style="width: 70%;">월 36만원선 ~</div>
+          </div>
+        </div>
+        <div class="chart-row">
+          <span class="chart-label">1.6 터보 하이브리드 (인기 모델)</span>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill hybrid" style="width: 82%;">월 39만원선 ~</div>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #718096;">설명: 가솔린 터보 모델은 초기 구입 장벽이 낮고 요금 부담이 가장 적은 반면, 하이브리드 모델은 월 납입 금액은 조금 높지만 장기 주행 시 연료 보충 비용 측면에서 뛰어난 방어력을 보입니다.</p>
+    </section>
+
+    <section id="simulator">
+      <h2>스포티지 실시간 리스 모의 계산기 프로그램</h2>
+      <p>원하는 엔진 옵션과 사용 기간, 그리고 초기 납입 금액 수준을 조정하여 예상되는 매월 납부 금액을 즉석에서 시뮬레이션해 보십시오. 복잡한 공식 대신 직관적인 계산 로직으로 한눈에 알기 쉽게 설계되었습니다.</p>
+      
+      <div class="simulator-container">
+        <div class="simulator-grid">
+          <div class="simulator-group">
+            <label for="calc-engine">파워트레인 선택</label>
+            <select id="calc-engine" onchange="updateSimulator()">
+              <option value="gasoline">1.6 가솔린 터보</option>
+              <option value="lpi">2.0 LPi</option>
+              <option value="diesel">2.0 디젤</option>
+              <option value="hybrid">1.6 터보 하이브리드</option>
+            </select>
+          </div>
+          
+          <div class="simulator-group">
+            <label for="calc-trim">트림 등급 지정</label>
+            <select id="calc-trim" onchange="updateSimulator()">
+              <option value="prestige">프레스티지</option>
+              <option value="noblesse">노블레스</option>
+              <option value="signature">시그니처</option>
+              <option value="gravity">그래비티</option>
+            </select>
+          </div>
+          
+          <div class="simulator-group">
+            <label for="calc-term">리스 약정 기간</label>
+            <select id="calc-term" onchange="updateSimulator()">
+              <option value="36">36개월 약정</option>
+              <option value="48" selected>48개월 약정</option>
+              <option value="60">60개월 약정</option>
+            </select>
+          </div>
+          
+          <div class="simulator-group">
+            <label for="calc-prepay">초기 납입 조건 (선납금 비율)</label>
+            <select id="calc-prepay" onchange="updateSimulator()">
+              <option value="0">무보증 (0퍼센트)</option>
+              <option value="10">선납금 10퍼센트</option>
+              <option value="20">선납금 20퍼센트</option>
+              <option value="30" selected>선납금 30퍼센트</option>
+              <option value="40">선납금 40퍼센트</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="simulator-result">
+          선택하신 설정에 따른 실시간 시뮬레이션 결과입니다.
+          <span id="calc-output">월 330,000 원</span>
+        </div>
+      </div>
+      
+      <p>본 시뮬레이터 프로그램의 계산 기준은 일반적인 신용 등급 우수자를 가정한 값이며, 신차 수급 조절에 따른 제조사의 기본 할인 변동 추이와 취등록세 분할 상환 이자가 포함되어 설계되었습니다. 정확한 개개인의 승인 한도와 추가적인 특별 혜택을 알아보고자 하신다면, 하단의 전문 컨설팅 창구를 통해 상세 조회를 요청해 주시기 바랍니다.</p>
+    </section>
+
+    <section id="comparison">
+      <h2>할부 구매 vs 리스 vs 장기렌트 심층 차이점 분석</h2>
+      <p>신차 스포티지를 집으로 인도받는 다양한 방법 중에서 본인에게 제일 잘 어울리는 계약 형식을 설정하기 위해 각각의 장단점을 논리적으로 짚고 넘어가야 합니다. 소유권의 주체, 번호판 노출 여부, 보험 가입 주체 및 사고 시 이력 관리 등 여러 영역에서 뚜렷한 차이점이 존재합니다.</p>
+      
+      <h3>1. 자산 소유 방식 및 세금 구조</h3>
+      <p>일반적인 은행 및 카드사 할부 구매는 자동차가 개인명의의 순수 자산으로 즉시 귀속됩니다. 이로 인하여 건강보험 지역 가입자의 경우 매달 청구되는 보험료 금액이 상승하게 되며 재산 가치 증가에 다른 종합 자산세 부담도 겪을 수밖에 없습니다. 반면 금융 리스 및 운용 리스는 캐피탈 전문 법인의 소유로 차량이 정식 등록되기 때문에 이러한 세무적인 패널티가 전혀 부과되지 않습니다.</p>
+      
+      <h3>2. 번호판과 보험 가입의 주체</h3>
+      <p>장기렌트의 경우 하, 허, 호 등의 대여 전용 번호판이 번호판에 고정 장착됩니다. 이로 인하여 대외적인 직업이나 품위 유지를 중요하게 여기는 분들은 다소 이질감을 느끼는 단점이 있습니다. 그러나 운용 리스는 자가용과 완벽하게 동일한 일반 번호판을 달고 도로를 주행하므로 타인의 시선에서 온전한 내차 같은 느낌을 제공합니다. 더불어, 렌터카는 렌트사 단체 보험에 귀속되어 무사고 경력이 소멸하지만, 리스는 기존 운전자의 소중한 개인 보험 무사고 할인율을 고스란히 계승할 수 있습니다.</p>
+
+      <h3>3. 온라인 커뮤니티의 냉철한 내돈내산 평판</h3>
+      <p>보배드림이나 디시인사이드 차 갤러리, 그리고 에펨코리아 및 펨코 포럼 등의 자동차 대형 소통 커뮤니티를 분석해 보면 내돈내산 계약 후기들이 실시간으로 교환되고 있습니다. 이용자들은 무엇보다 복잡하게 꼬여 있는 금리 구조를 투명하게 밝혀내 주는 정직한 전문 업체를 만나는 것이 가장 중요한 성공 비결이라고 한목소리로 강조합니다. 가짜 특판 정보에 현혹되지 않고, 실제로 지원 가능한 서비스 용품과 현금지원 지원금 수준을 정직하게 견적서상에 명기해 주는 좌표 성지 업체를 신중히 구별해야만 뒤늦은 후회가 없습니다.</p>
+    </section>
+
+    <section id="process">
+      <h2>스포티지 리스 진행 단계별 절차 안내</h2>
+      <p>신속하고 안전하게 원하는 스포티지 차량을 출고 받기 위해서는 정립된 4단계 프로토콜을 차례대로 숙지하고 이행하시면 됩니다.</p>
+      
+      <h3>1단계: 비대면 온라인 신청 및 다이렉트 분석</h3>
+      <p>스마트폰 인터넷이나 PC 웹사이트를 통해 맞춤 문의를 신청하시면 전문 상담사가 배정됩니다. 이 단계에서 구글, 네이버 검색을 바탕으로 한 최신 트렌드 분석과 제미나이, 챗지피티 등 초거대 AI 도구가 정밀 산출해 주는 이자 구조를 바탕으로, 현재 시점에서 가장 유리한 금리를 제공하는 1금융 캐피탈을 우선 수배합니다.</p>
+      
+      <h3>2단계: 1:1 정밀 심사 및 서류 접수</h3>
+      <p>정확한 소득 수준과 신용 점수 평점을 검토하여 한도 승인 가능 여부를 확인합니다. 무보증 무담보 기준의 승인을 달성하기 위한 구체적인 노하우를 제공하며, 저신용 및 초기 창업 기업의 경우에도 보증서 대체 발행 제도를 추천해 승인 확률을 최대로 상승시키는 컨설팅을 집행합니다.</p>
+      
+      <h3>3단계: 금융 계약 체결 및 특판 할인 적용</h3>
+      <p>원하는 외장 색상과 선호 옵션 패키지를 최종 결정한 다음, 공정거래위원회의 표준 권고 약관에 준거한 전자 계약서 서명을 매끄럽게 수행합니다. 이와 동시에 특별 프로모션으로 적용 가능한 추가적인 현금지원 지원금 사은품 혜택과 모바일 기프티콘 상품권 수령 일정을 명확하게 체크해 드립니다.</p>
+      
+      <h3>4단계: 캐리어 인도 및 정성스러운 검수</h3>
+      <p>제조사 공장에서 갓 생산 완료된 신차가 지정된 전문 탁송 캐리어를 통해 약속된 장소로 도착합니다. 현장에서 전담 매니저가 외관 도장면 불량, 가죽 이염, 단차 유무를 상세히 체크하는 인도 과정을 마친 뒤 정식으로 열쇠를 넘겨받고 주행을 시작하시면 모든 순서가 종료됩니다.</p>
+    </section>
+
+    <section id="apply">
+      <div class="form-box">
+        <h2>디올뉴 스포티지 무료 비교 견적 신청서</h2>
+        <p>전국의 금융 채널을 실시간 종합하여 가장 비용이 저렴한곳 및 숨겨진 혜택 조건의 최저가 맞춤 분석을 신속히 선사해 드립니다. 개인 정보는 안전하게 보안 처리되며 오직 비교 분석에만 전적으로 활용됩니다.</p>
+        
+        <form onsubmit="return handleFormSubmit(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="user-name">성함 (필수)</label>
+              <input type="text" id="user-name" placeholder="실명을 입력해 주세요" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="user-tel">연락처 (필수)</label>
+              <input type="tel" id="user-tel" placeholder="예: 010-1234-5678" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="user-engine">희망 엔진 종류</label>
+              <select id="user-engine">
+                <option value="1.6T-Gasoline">1.6 가솔린 터보</option>
+                <option value="1.6-Hybrid" selected>1.6 터보 하이브리드</option>
+                <option value="2.0-LPi">2.0 LPi</option>
+                <option value="2.0-Diesel">2.0 디젤</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="user-trim">희망 세부 등급</label>
+              <select id="user-trim">
+                <option value="Prestige">프레스티지 등급</option>
+                <option value="Noblesse">노블레스 등급</option>
+                <option value="Signature" selected>시그니처 등급</option>
+                <option value="Gravity">그래비티 등급</option>
+                <option value="30th">30주년 한정판 에디션</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="user-term">원하는 사용 기간</label>
+              <select id="user-term">
+                <option value="36">36개월 이용</option>
+                <option value="48" selected>48개월 이용</option>
+                <option value="60">60개월 이용</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="user-prepay">초기 준비금 여유</label>
+              <select id="user-prepay">
+                <option value="0">초기 비용 0원 (보증서 대체)</option>
+                <option value="10">선납금 10퍼센트 비율</option>
+                <option value="20">선납금 20퍼센트 비율</option>
+                <option value="30" selected>선납금 30퍼센트 비율</option>
+                <option value="40">보증금 10퍼센트 비율</option>
+                <option value="50">보증금 20퍼센트 비율</option>
+              </select>
+            </div>
+            
+            <div class="form-group full-width">
+              <label for="user-notes">추가적인 개별 희망 사항 (선호 색상 또는 특별 할인 적용 문의)</label>
+              <textarea id="user-notes" rows="3" placeholder="예: 블랙 원톤 실내 색상 적용 희망, 즉시 출고 가능한 즉출 재고 차량 매칭 요청, 현금지원 사은품 혜택 조건 문의 등"></textarea>
+            </div>
+          </div>
+          
+          <div class="checkbox-group">
+            <input type="checkbox" id="privacy-agree" required>
+            <label for="privacy-agree">맞춤형 견적 설계 및 금융 조건 상담 진행을 위한 개인정보 수집 및 이용 방침에 전적으로 동의합니다. (개인정보는 유선 안내 종료 시 즉시 파기됩니다.)</label>
+          </div>
+          
+          <button type="submit" class="submit-btn">최저가 실시간 포괄 비교 견적 신청하기</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>스포티지 리스 자주 묻는 질문 FAQ (아코디언 구조)</h2>
+      <p>많은 고객들이 실제로 진행하기 전에 끊임없이 질의해 주시는 핵심적인 쟁점 사항들을 정확하고 투명하게 선별해 정답을 달아놓았습니다. 탭을 마우스로 클릭하면 상세 내용을 즉각 파악하실 수 있습니다.</p>
+      
+      <dl>
+        <dt onclick="toggleAccordion(this)">질문: 리스 요금에 취등록세와 매년 내는 자동차세가 전부 녹아 들어가 있는 구조인가요?</dt>
+        <dd>답변: 네, 맞습니다. 운용 리스 상품 계약 시 초기 차량 등록에 소요되는 취득세 7퍼센트 금액과 공채 매입 비용은 모두 계약서상에 반영되어 월 납입 요금 형태로 고르게 안착됩니다. 또한 매년 6월과 12월에 거주하시는 지자체에서 고지되는 자동차세의 경우에도 고객의 희망에 따라 월 납입금 내에 분할 포함해 내거나, 혹은 별도로 수납하는 방식 중 하나를 자유롭게 선택할 수 있어 지출 관리가 매우 쾌적해집니다.</dd>
+        
+        <dt onclick="toggleAccordion(this)">질문: 약정 기간 도중에 피치 못할 사정으로 중간에 해지하고 싶은 경우에는 위약금 부과율이 어떻게 되나요?</dt>
+        <dd>답변: 리스는 기본적으로 일정 기간 유지를 전제로 한 약정 형태의 금융 계약입니다. 따라서 만기 시점 전에 중도 반납을 하시면 비교적 높은 잔여 가치 대비 중도 해지 수수료 위약금이 캐피탈사별 요율에 근거하여 발생하게 됩니다. 그러나 직접 반납을 실행하는 것보다 현재 사용하고 있는 똑같은 금융 조건과 월 요금 상태 그대로 타인에게 계약을 승계하는 리스 승계 제도를 슬기롭게 이용하시면 엄청난 수수료 손실 부담을 획기적으로 낮출 수 있는 탈출구가 있습니다.</dd>
+        
+        <dt onclick="toggleAccordion(this)">질문: 연간 주행 거리 약정 한도가 정해져 있다고 하던데 제한 수준과 초과 수수료는 얼마인가요?</dt>
+        <dd>답변: 보편적으로 연간 최소 1만 5천 킬로미터부터 최대 4만 킬로미터 범위 내에서 자유롭게 설정을 잡아 계약을 맺습니다. 보통 가장 많은 비율을 점유하는 2만 킬로미터를 주행 한도로 설정하시는 분이 많은데, 만약 이를 초과하게 될 경우 국산 차량 표준 페널티 기준에 의해 1킬로미터당 약 100원에서 200원 수준의 초과 누진 운행 요금이 청구될 수 있습니다. 출퇴근 주행 거리가 매우 기신 분들은 애초에 약정 계약을 진행할 때 한도 폭을 높게 설정하는 것이 안전합니다.</dd>
+        
+        <dt onclick="toggleAccordion(this)">질문: 사업자의 세액 공제 비용 처리는 한 달에 최대 얼마까지 정상 집행되나요?</dt>
+        <dd>답변: 대한민국 소득세법 및 법인세법 기준에 따르면, 사업용 차량 운용 시 연간 최대 800만원 한도 내에서 감가상각비 성격의 리스료를 전액 손비 처리할 수 있습니다. 여기에 더해 유류비, 자동차세, 고속도로 통행료, 주차 요금 등의 차량 유지 비용 영역에 대해 추가적으로 연간 최대 700만원까지 합산 비용 처리가 가능하여 매년 차량 1대당 최대 총합 1500만원 수준의 엄청난 절세 효과를 공식적으로 확보하실 수 있습니다.</dd>
+        
+        <dt onclick="toggleAccordion(this)">질문: 계약이 다 끝나서 종료되는 만기 시점에는 차량 처리를 어떻게 결정해야 하나요?</dt>
+        <dd>답변: 계약 설계 시점에 고정한 잔존가치 금액을 기준으로 3가지 진로가 열립니다. 첫째, 차량 상태가 우수하고 소유를 원하면 잔존가치에 상당하는 보증금을 차감한 나머지 잔여 차액을 캐피탈사에 일시불 지불하고 본인 명의로 정식 인수를 행합니다. 둘째, 신형 다른 차로 교체하고 싶다면 깨끗하게 차량을 반납하고 계약을 영구 종료합니다. 셋째, 인수나 반납 모두 부담스러운 상황이라면 약정 기한을 일정한 이율 하에 수개월 더 뒤로 미루는 재리스 방식을 선택하실 수 있습니다.</dd>
+      </dl>
+    </section>
+
+    <section id="trusted-resources">
+      <h2>공인된 신뢰성 있는 정보 출처 안내</h2>
+      <p>계약을 검토하고 최종 승인을 신청하기 전, 공신력 있는 유관 국가기관 및 신뢰할 수 있는 외부 백과사전 웹사이트를 방문하여 시장 표준 약관과 객관적이고 정확한 차량 세부 제원 역사를 명확하게 검증해 보실 수 있습니다.</p>
+      
+      <div class="trusted-links">
+        <ul>
+          <li>
+            <a href="https://leaseetrutha.withusrizz.com" target="_blank" rel="noopener noreferrer">
+              디올뉴 스포티지 금융 연동 신뢰성 공식 분석 포털 (reliabledone.com)
+            </a>
+            - 다양한 자동차 리스 이율 변화 시뮬레이션 데이터를 실시간 확인 가능한 정형 분석 도구를 배포합니다.
+          </li>
+          <li>
+            <a href="https://namu.wiki/w/%EA%B8%B0%EC%95%84%20%EC%8A%A4%ED%8F%AC%ED%8B%B0%EC%A7%80" target="_blank" rel="noopener noreferrer">
+              기아 스포티지 브랜드 역사 및 모델 분석 (나무위키)
+            </a>
+            - 1세대부터 현재 판매 중인 2026년식 5세대 NQ5 모델까지의 역사를 면밀히 보여줍니다.
+          </li>
+          <li>
+            <a href="https://www.ftc.go.kr" target="_blank" rel="noopener noreferrer">
+              여신금융거래 표준약관 및 보장 규정 (공정거래위원회)
+            </a>
+            - 소비자 권익 침해 방지를 위한 할부, 임대차, 리스 금융 거래 표준 계약 서식과 안전 보호 지침을 알립니다.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <script>
+    const vehicleData = {
+      gasoline: {
+        basePrice: 28400000,
+        trimMultipliers: { prestige: 1.0, noblesse: 1.12, signature: 1.21, gravity: 1.26 }
+      },
+      lpi: {
+        basePrice: 29100000,
+        trimMultipliers: { prestige: 1.0, noblesse: 1.12, signature: 1.21, gravity: 1.25 }
+      },
+      diesel: {
+        basePrice: 30900000,
+        trimMultipliers: { prestige: 1.0, noblesse: 1.11, signature: 1.20, gravity: 1.24 }
+      },
+      hybrid: {
+        basePrice: 33500000,
+        trimMultipliers: { prestige: 1.0, noblesse: 1.10, signature: 1.18, gravity: 1.21 }
+      }
+    };
+
+    function updateSimulator() {
+      const engine = document.getElementById('calc-engine').value;
+      const trim = document.getElementById('calc-trim').value;
+      const term = parseInt(document.getElementById('calc-term').value);
+      const prepayPercent = parseInt(document.getElementById('calc-prepay').value);
+
+      const targetPrice = vehicleData[engine].basePrice * vehicleData[engine].trimMultipliers[trim];
+
+      const residualPercent = term === 36 ? 52 : (term === 48 ? 46 : 40);
+      const residualValue = targetPrice * (residualPercent / 100);
+
+      const prepaidAmount = targetPrice * (prepayPercent / 100);
+
+      const interestRate = 0.055;
+      const totalPrincipal = targetPrice - prepaidAmount - residualValue;
+      
+      const rawMonthly = (totalPrincipal / term) + ((targetPrice * interestRate) / 12);
+      
+      const finalMonthly = Math.max(150000, Math.round(rawMonthly / 1000) * 1000);
+
+      document.getElementById('calc-output').innerText = "월 " + finalMonthly.toLocaleString() + " 원";
+    }
+
+    function toggleAccordion(element) {
+      const allDts = document.querySelectorAll('dl dt');
+      allDts.forEach(dt => {
+        if (dt !== element) {
+          dt.classList.remove('active');
+        }
+      });
+      element.classList.toggle('active');
+    }
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('user-name').value;
+      const tel = document.getElementById('user-tel').value;
+      if (name && tel) {
+        alert(name + " 고객님, 디올뉴 스포티지 실시간 다이렉트 최저가 맞춤 설계 신청이 정상적으로 접수되었습니다. 담당 에이전트가 신속하고 투명하게 연락드리겠습니다.");
+      }
+      return false;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateSimulator();
+    });
+  </script>
+
+  
